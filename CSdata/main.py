@@ -28,7 +28,7 @@ def merge_compare(df_old, df_new, params, suffixes=("_2021", "_2024")):
     for param in params:
         merged_comp[f"{param}_change_%"] = (
             (merged_comp[f"{param}{suffixes[1]}"] - merged_comp[f"{param}{suffixes[0]}"])
-            / merged_comp[f"{param}{suffixes[0]}"]* 100).round(0).astype("Int64")  # rounding to whole numbers
+            / merged_comp[f"{param}{suffixes[0]}"]* 100).round(0).astype("Int64")  # percent change in 2021-2024 and rounding to whole numbers
     return merged_comp
 
 
@@ -68,14 +68,95 @@ def plot_tech_map(final_summary, output_file="us_tech_map.html"):
     fig.show()
     fig.write_html(output_file)
 
+def get_tech_occ_codes(df_occupation):
+    #ONet function
+    #get all 15-xxxx codes
+    return (
+        df_occupation["O*NET-SOC Code"].astype(str).str.strip().loc[lambda x: x.str.startswith("15-")].unique()
+    )
+
+def filter_tech_skills(df_onet_tech, onet_occ_codes):
+    #ONet function
+    #return all rows that are in the already filtered onet_occ_codes, so just 15-XXXX
+    df_onet_tech["O*NET-SOC Code"] = df_onet_tech["O*NET-SOC Code"].astype(str).str.strip()
+    return df_onet_tech[df_onet_tech["O*NET-SOC Code"].isin(onet_occ_codes)].copy()
+
+def classify_tech(df_filtered_tech):
+    # Onet func, filter hot, in demand and both.
+    def classify(row):
+        hot = str(row["Hot Technology"]).strip().upper()
+        demand = str(row["In Demand"]).strip().upper()
+
+        if hot == "Y" and demand == "Y":
+            return "Hot & In Demand"
+        elif hot == "Y":
+            return "Hot Only"
+        elif demand == "Y":
+            return "In Demand Only"
+        else:
+            return "Neither"
+
+    # axis = 1 feeds each row into classify function
+    df_filtered_tech["TECH_CATEGORY"] = df_filtered_tech.apply(classify, axis=1)
+
+    # remove useless rows
+    df_filtered_tech = df_filtered_tech[df_filtered_tech["TECH_CATEGORY"] != "Neither"].copy()
+
+    return df_filtered_tech
+
+def select_final_columns(df):
+    # ONet func
+    # keep needed cols, cleaner later on
+    return df[[
+        "Title",
+        "Commodity Title",
+        "Hot Technology",
+        "In Demand",
+        "TECH_CATEGORY"
+    ]]
+
 
 if __name__ == "__main__":
     # Load Excels
     excel_file24 = "data/state_M2024_dl.xlsx"
     excel_file21 = "data/state_M2021_dl.xlsx"
+    excel_technology= "data/Technology Skills.xlsx"
+    excel_occupation= "data/Occupation Data.xlsx"
 
     df24 = load_excel(excel_file24, "state_M2024_dl")
     df21 = load_excel(excel_file21, "All May 2021 data")
+    df_tech = load_excel(excel_technology, "Technology Skills")
+    df_occ = load_excel(excel_occupation, "Occupation Data")
+
+    # ONet section
+    # get tech occupation codes
+    tech_codes = get_tech_occ_codes(df_occ)
+
+    # filter tech skills
+    tech_filtered = filter_tech_skills(df_tech, tech_codes)
+
+    # classify
+    tech_classified = classify_tech(tech_filtered)
+
+    # final columns
+    final_df = select_final_columns(tech_classified)
+
+    final_df.to_csv("tech_skills_master.csv", index=False)
+    fig = px.treemap(
+        final_df,
+        path=["Title", "TECH_CATEGORY", "Commodity Title"],
+        title="Hot & In-Demand Tech Skills by Occupation"
+    )
+    fig.update_layout(
+        font= dict(
+            family= "Comic Sans MS",
+            size =14,
+            color= "black",
+        )
+    )
+    fig.show()
+    fig.write_html("tech_skills_master.html")
+    # end of onet
 
     # Columns to clean
     cols = ["TOT_EMP", "JOBS_1000", "A_MEDIAN", "A_MEAN"]
