@@ -11,13 +11,14 @@ Data
 - [x] Filter and sort Data 
 - [x] Verify data
 - [x] Perform calculations of data to find avg and format into a final file
+- [ ] Obtain a better dataset of skills
 
 Visuals
-- [ ] Finish Plotly charts/graphs/maps
-- [ ] Export Visuals
+- [x] Finish prototype Plotly charts/graphs/maps
 
 Frontend
-tbc...
+- [ ] Create base
+- [ ] Visuals / text / styling
 
 Backend
 tbc...
