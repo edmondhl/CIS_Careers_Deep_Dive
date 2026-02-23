@@ -29,6 +29,14 @@ def merge_compare(df_old, df_new, params, suffixes=("_2021", "_2024")):
         merged_comp[f"{param}_change_%"] = (
             (merged_comp[f"{param}{suffixes[1]}"] - merged_comp[f"{param}{suffixes[0]}"])
             / merged_comp[f"{param}{suffixes[0]}"]* 100).round(0).astype("Int64")  # percent change in 2021-2024 and rounding to whole numbers
+    merged_comp["TOT_EMP_change_abs"] = merged_comp["TOT_EMP_change_%"].abs()
+    merged_comp = merged_comp.dropna(subset=[
+        "TOT_EMP_2024",
+        "A_MEDIAN_2024",
+        "TOT_EMP_change_abs"
+    ])
+    # merged_comp["TOT_EMP_2024"] = merged_comp["TOT_EMP_2024"].fillna(merged_comp["TOT_EMP_2021"])
+    # merged_comp["A_MEDIAN_2024"] = merged_comp["A_MEDIAN_2024"].fillna(merged_comp["A_MEDIAN_2021"])
     return merged_comp
 
 
@@ -158,6 +166,8 @@ if __name__ == "__main__":
     fig.write_html("tech_skills_master.html")
     # end of onet
 
+
+
     # Columns to clean
     cols = ["TOT_EMP", "JOBS_1000", "A_MEDIAN", "A_MEAN"]
     df24 = clean_numeric_columns(df24, cols)
@@ -171,12 +181,12 @@ if __name__ == "__main__":
     metrics = ["TOT_EMP", "JOBS_1000", "A_MEDIAN"]
     merged = merge_compare(software_dev_filtered21, software_dev_filtered24, metrics)
     merged.to_csv("comparison_2021_2024.csv", index=False)
-    print("✅ comparison_2021_2024.csv created.")
+    print("comparison_2021_2024.csv created.")
 
     # All tech occupations according to OEWS by state
     tech_by_state = tech_state_summary(df24)
     tech_by_state.to_csv("tech_state_summary.csv", index=False)
-    print("✅ tech_state_summary.csv created")
+    print("tech_state_summary.csv created")
 
     # State abbreviations for Plotly
     state_abbrev = {
@@ -201,3 +211,22 @@ if __name__ == "__main__":
 
     # Test map
     plot_tech_map(state_summary)
+
+    #software dev chart
+    scatter = px.scatter(
+        merged,
+        x="TOT_EMP_2024",
+        y="A_MEDIAN_2024",
+        size="TOT_EMP_change_abs",
+        color="JOBS_1000_2024",
+        hover_name="AREA_TITLE",
+        title="Software Developer Market Strength by State (2024)",
+    )
+
+    scatter.update_traces(
+        marker=dict(line=dict(width=1, color="black")),  # outline bubbles
+        selector=dict(mode="markers")
+    )
+
+    scatter.show()
+    scatter.write_html("software_dev.html")
