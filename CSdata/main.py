@@ -1,7 +1,6 @@
 import pandas as pd
 import plotly.express as px
 
-
 def load_excel(file_path, sheet_name):
     df = pd.read_excel(file_path, sheet_name=sheet_name)
     return df
