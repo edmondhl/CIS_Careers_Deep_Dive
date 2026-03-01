@@ -22,7 +22,6 @@ export default function ChoroplethMap({ data }: Props) {
           locations: data.map(d => d.state),
           z: data.map(d => d.value),
           colorscale: "Oranges",
-          marker: { line: { color: "white", width: 1 } },
         },
       ]}
       layout={{
