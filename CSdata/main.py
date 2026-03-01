@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-OUTPUT_DIR = r"..\front\data"
+OUTPUT_DIR = r"..\front\public"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 def load_excel(file_path, sheet_name):
