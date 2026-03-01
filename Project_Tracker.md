@@ -11,14 +11,18 @@ Data
 - [x] Filter and sort Data 
 - [x] Verify data
 - [x] Perform calculations of data to find avg and format into a final file
-- [ ] Obtain a better dataset of skills
+- [ ] openAI API to help o*net data
 
 Visuals
 - [x] Finish prototype Plotly charts/graphs/maps
 
 Frontend
-- [ ] Create base
-- [ ] Visuals / text / styling
+- [x] Create base
+- [x] Choropleth map as homepage
+- [x] Clickalbe states -> state specific data
+- [x] Displaying basic occupation data per state
+- [ ] A proper skills dataset being displayed
+- [ ] Tailwind styling and cleaning up
 
 Backend
 tbc...

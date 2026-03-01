@@ -16,16 +16,16 @@ def clean_numeric_columns(df, columns):
 
 def filter_occupation(df, occupation):
     return df[df["OCC_TITLE"].str.contains(occupation, case=False, na=False)][
-        ["AREA_TITLE", "TOT_EMP", "JOBS_1000", "A_MEDIAN"]
+        ["AREA_TITLE", "OCC_TITLE", "TOT_EMP", "JOBS_1000", "A_MEDIAN"]
     ]
 
 def merge_compare(df_old, df_new, params, suffixes=("_2021", "_2024")):
     merged_comp = pd.merge(df_old, df_new, on="AREA_TITLE", suffixes=suffixes)
     for param in params:
-        merged_comp[f"{param}_change_%"] = (
+        merged_comp[f"{param}_change_percent"] = (
             (merged_comp[f"{param}{suffixes[1]}"] - merged_comp[f"{param}{suffixes[0]}"])
             / merged_comp[f"{param}{suffixes[0]}"] * 100).round(0).astype("Int64")
-    merged_comp["TOT_EMP_change_abs"] = merged_comp["TOT_EMP_change_%"].abs()
+    merged_comp["TOT_EMP_change_abs"] = merged_comp["TOT_EMP_change_percent"].abs()
     merged_comp = merged_comp.dropna(subset=[
         "TOT_EMP_2024",
         "A_MEDIAN_2024",
@@ -109,12 +109,18 @@ if __name__ == "__main__":
     df24 = clean_numeric_columns(df24, cols)
     df21 = clean_numeric_columns(df21, cols)
 
-    # Software Developers comparison 2021 vs 2024
-    software_dev_filtered24 = filter_occupation(df24, "Software Developers")
-    software_dev_filtered21 = filter_occupation(df21, "Software Developers")
+    # occupations in state comparison
+    occupations= [ "Software Developers", "Computer Programmers", "Data Scientist", "Web Developers"]
     metrics = ["TOT_EMP", "JOBS_1000", "A_MEDIAN"]
-    merged = merge_compare(software_dev_filtered21, software_dev_filtered24, metrics)
-    save_json(merged, "comparison_2021_2024.json")
+    all_filtered = []
+    for occ in occupations:
+        df24_occ = filter_occupation(df24, occ)
+        df21_occ = filter_occupation(df21, occ)
+        merged_occ = merge_compare(df21_occ, df24_occ, metrics)
+        all_filtered.append(merged_occ)
+
+    merged_all = pd.concat(all_filtered, ignore_index=True)
+    save_json(merged_all, "comparison_2021_2024.json")
 
     # All tech occupations by state
     tech_by_state = tech_state_summary(df24)
