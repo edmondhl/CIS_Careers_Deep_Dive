@@ -13,7 +13,7 @@ export default function ChoroplethMap({ data }: Props) {
   const router = useRouter()
 
   const hoverText = data.map(d =>
-    `<b>${d.state}</b><br>Total Employment: ${d.TOT_EMP.toLocaleString()}<br>Median Salary: $${d.A_MEDIAN.toLocaleString()}`
+    `<b>${d.state}</b><br>Total Employment: ~${d.TOT_EMP.toLocaleString()}<br>Median Salary: $${d.A_MEDIAN.toLocaleString()}`
   )
 
   return (

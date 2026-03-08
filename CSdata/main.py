@@ -74,6 +74,7 @@ def classify_tech(df_filtered_tech):
 def select_final_columns(df):
     return df[[
         "Title",
+        "Example",
         "Commodity Title",
         "Hot Technology",
         "In Demand",
