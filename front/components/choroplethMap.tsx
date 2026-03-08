@@ -6,22 +6,31 @@ import { useRouter } from 'next/navigation'
 const Plot = dynamic(() => import('react-plotly.js'), { ssr: false })
 
 type Props = {
-  data: { state: string; value: number }[]
+  data: { state: string; TOT_EMP: number; A_MEDIAN: number }[]
 }
 
 export default function ChoroplethMap({ data }: Props) {
   const router = useRouter()
 
+  const hoverText = data.map(d =>
+    `<b>${d.state}</b><br>Total Employment: ${d.TOT_EMP.toLocaleString()}<br>Median Salary: $${d.A_MEDIAN.toLocaleString()}`
+  )
+
   return (
     <Plot
-      key={JSON.stringify(data)} // forces remount whenever data changes
+      key={JSON.stringify(data)}
       data={[
         {
           type: "choropleth",
           locationmode: "USA-states",
           locations: data.map(d => d.state),
-          z: data.map(d => d.value),
+          z: data.map(d => d.TOT_EMP), 
           colorscale: "Oranges",
+          hoverinfo: "text",      
+          text: hoverText,
+          colorbar: {
+            title: { text: "Total Employment" },
+          }
         },
       ]}
       layout={{
