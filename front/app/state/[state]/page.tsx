@@ -55,6 +55,7 @@ function MiniBarChart({ val2021, val2024, label, formatVal, formatTick }: BarCha
   const [tooltip, setTooltip] = useState<TooltipState>({ visible: false, x: 0, y: 0, value: "", year: "", color: "" })
   const svgRef = useRef<SVGSVGElement>(null)
 
+  // Chart dimensions and padding built into the component so no need to adjust div
   const W = 140
   const H = 160
   const padL = 38
@@ -64,21 +65,27 @@ function MiniBarChart({ val2021, val2024, label, formatVal, formatTick }: BarCha
   const chartH = H - padT - padB
   const chartW = W - padL - padR
 
+  //max value for scaling bars, add 15% headroom
   const max = Math.max(val2021, val2024) * 1.15
   const barW = chartW / 4
 
+  // Bar heights based on values
   const h2021 = (val2021 / max) * chartH
   const h2024 = (val2024 / max) * chartH
 
+  // X positions for the two bars
   const x2021 = padL + chartW * 0.15
   const x2024 = padL + chartW * 0.55
 
+  // Y positions are calculated in the rect elements since they depend on bar height
   const ticks = [0, max * 0.5, max].map(v => ({
     val: v,
     y: padT + chartH - (v / max) * chartH
   }))
 
   function handleMouseEnter(e: React.MouseEvent, year: string, value: number, color: string) {
+    //useRef on SVG so we call call getBoundClinetREct() in it.It tells you where any element on page is . 
+    // svgRef.current gives us direcft access to the actual DOM element
     const rect = svgRef.current?.getBoundingClientRect()
     if (!rect) return
     setTooltip({
