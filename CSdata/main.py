@@ -19,6 +19,7 @@ def filter_occupation(df, occupation):
         ["AREA_TITLE", "OCC_TITLE", "TOT_EMP", "JOBS_1000", "A_MEDIAN"]
     ]
 
+#Combine 21 and 24 dataframes and combines them , then calcs how much each metric changed between the years
 def merge_compare(df_old, df_new, params, suffixes=("_2021", "_2024")):
     merged_comp = pd.merge(df_old, df_new, on="AREA_TITLE", suffixes=suffixes)
     for param in params:
@@ -30,9 +31,10 @@ def merge_compare(df_old, df_new, params, suffixes=("_2021", "_2024")):
         "TOT_EMP_2024",
         "A_MEDIAN_2024",
         "TOT_EMP_change_abs"
-    ])
+    ]) # drop incomplete rows
     return merged_comp
 
+#code to the col in gov data where it gives overall avg of tech job in state
 def tech_state_summary(df, code_prefix="15-0000"):
     techs_in_states = df[df["OCC_CODE"].astype(str).str.startswith(code_prefix)][
         ["AREA_TITLE", "TOT_EMP", "JOBS_1000", "A_MEDIAN"]
@@ -45,11 +47,13 @@ def add_state_abbrev(df, abbrev_dict):
     print("Missing abbreviations:", us_states["state_abbrev"].isna().sum())
     return us_states
 
+#all occupations that start with 15- are tech related
 def get_tech_occ_codes(df_occupation):
     return (
         df_occupation["O*NET-SOC Code"].astype(str).str.strip().loc[lambda x: x.str.startswith("15-")].unique()
     )
 
+#returns only the technology skills data that belong to the tech occupations in dataset. also removes any whitespace in the 15- code
 def filter_tech_skills(df_onet_tech, onet_occ_codes):
     df_onet_tech["O*NET-SOC Code"] = df_onet_tech["O*NET-SOC Code"].astype(str).str.strip()
     return df_onet_tech[df_onet_tech["O*NET-SOC Code"].isin(onet_occ_codes)].copy()
