@@ -1,6 +1,11 @@
 import pandas as pd
 import os
 
+#input from OEWS and ONet datasets.
+#clean with python and pandas. filtering occurs in this file and custom jsons are sent to frontend
+#occupation filtering is predetermined here. Currently set to a couple of popular tech positions
+# output is inside front's public folder.
+
 OUTPUT_DIR = r"..\front\public"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
@@ -75,6 +80,7 @@ def classify_tech(df_filtered_tech):
     df_filtered_tech = df_filtered_tech[df_filtered_tech["TECH_CATEGORY"] != "Neither"].copy()
     return df_filtered_tech
 
+#this is the data parameters for the tech skills json
 def select_final_columns(df):
     return df[[
         "Title",
@@ -102,11 +108,19 @@ if __name__ == "__main__":
     df_tech = load_excel(excel_technology, "Technology Skills")
     df_occ = load_excel(excel_occupation, "Occupation Data")
 
+    occupations = ["Software Developers", "Computer Programmers", "Data Scientist", "Web Developers"]
+
     # ONet section
     tech_codes = get_tech_occ_codes(df_occ)
     tech_filtered = filter_tech_skills(df_tech, tech_codes)
     tech_classified = classify_tech(tech_filtered)
     final_df = select_final_columns(tech_classified)
+
+    #filters skills df to only include those related to the predetermined tech occupations
+    final_df = final_df[
+        final_df["Title"].apply(lambda x: any(occupation.lower() in x.lower() for occupation in occupations))
+    ]
+
     save_json(final_df, "tech_skills_master.json")
 
     # Columns to clean
@@ -115,7 +129,6 @@ if __name__ == "__main__":
     df21 = clean_numeric_columns(df21, cols)
 
     # occupations in state comparison
-    occupations= [ "Software Developers", "Computer Programmers", "Data Scientist", "Web Developers"]
     metrics = ["TOT_EMP", "JOBS_1000", "A_MEDIAN"]
     all_filtered = []
     for occ in occupations:
