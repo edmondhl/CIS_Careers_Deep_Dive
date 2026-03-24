@@ -297,8 +297,8 @@ export default function StatePage() {
                     className="flex justify-between items-center px-4 py-2.5 bg-[#f9f7f4] border border-gray-200 rounded-md"
                   >
                     <div>
-                      <p className="font-semibold text-sm m-0">{item.label}</p>
-                      <p className="text-xs text-gray-400 m-0">{item.from} → {item.to}</p>
+                      <p className="font-semibold text-large m-0">{item.label}</p>
+                      <p className="text-sm text-gray-700 m-0">{item.from} → {item.to}</p>
                     </div>
                     <div className="text-base">{formatChange(item.change)}</div>
                   </div>
@@ -308,7 +308,8 @@ export default function StatePage() {
             </div>
 
             <button
-              onClick={() => router.push(`/skills/${occ.OCC_TITLE_2024}`)}
+              //because occ titles have spaces, encode the url so path doesnt break and decode them in skills page
+              onClick={() => router.push(`/skills/${encodeURIComponent(occ.OCC_TITLE_2024)}`)}
               className="mt-5 text-sm text-blue-500 underline italic cursor-pointer bg-transparent border-none p-0"
             >
               Click for skill details →

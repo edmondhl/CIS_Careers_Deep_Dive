@@ -3,6 +3,11 @@
 import dynamic from 'next/dynamic'
 import { useRouter } from 'next/navigation'
 
+//dynamic import because plotly is a big library and we should only load when we need it. keeps inital page load fast.
+//ssr is server side rendering. plotly doesnt work with ssr so we disable it for this component. 
+// it will only render on the client side. if we didnt do this, 
+// we would get errors when trying to render the page on the server because plotly 
+// relies on browser APIs that arent available on the server.
 const Plot = dynamic(() => import('react-plotly.js'), { ssr: false })
 
 type Props = {
