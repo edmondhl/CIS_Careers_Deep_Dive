@@ -1,4 +1,4 @@
-import ChoroplethMap from "@/components/choroplethMap"
+import SalaryFilterBar from "@/components/salaryFilterBar"
 import path from "path"
 import { promises as fs } from "fs"
 
@@ -8,6 +8,7 @@ type StateEntry = {
   JOBS_1000: number
   A_MEDIAN: number
   state_abbrev: string
+  RPP_2024: number
 }
 
 export default async function Home() {
@@ -21,17 +22,19 @@ export default async function Home() {
     state: row.state_abbrev,
     TOT_EMP: row.TOT_EMP,
     A_MEDIAN: row.A_MEDIAN,
+    RPP_2024: row.RPP_2024,
   }))
 
-  // national rankings computed server side from same json 
-  // (b-a is descending order, if neg then a comes first then b, if pos then b comes first then a, if 0 then they are equal)
-  const top5Emp = [...usStates].sort((a, b) => b.TOT_EMP - a.TOT_EMP).slice(0, 5)
-  const top5Salary = [...usStates].sort((a, b) => b.A_MEDIAN - a.A_MEDIAN).slice(0, 5)
-  const top5Jobs1k = [...usStates].sort((a, b) => b.JOBS_1000 - a.JOBS_1000).slice(0, 5)
+  const top5Emp          = [...usStates].sort((a, b) => b.TOT_EMP   - a.TOT_EMP  ).slice(0, 5)
+  const top5Salary       = [...usStates].sort((a, b) => b.A_MEDIAN  - a.A_MEDIAN ).slice(0, 5)
+  const top5Jobs1k       = [...usStates].sort((a, b) => b.JOBS_1000 - a.JOBS_1000).slice(0, 5)
+  const top5BuyingPower  = [...usStates].sort((a, b) => a.RPP_2024  - b.RPP_2024 ).slice(0, 5)
 
   return (
     <main className="bg-[#f9f7f4] min-h-screen">
-      <ChoroplethMap data={mapData} />
+      <div className="pb-10 border-b border-gray-700">
+        <SalaryFilterBar data ={mapData} />
+      </div>
 
       <div className="max-w-5xl mx-auto px-6 py-16 font-serif">
 
@@ -57,7 +60,7 @@ export default async function Home() {
           view of the current technology job landscape.
         </p>
 
-        <div className="grid grid-cols-3 gap-6 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
           <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
             <p className="text-xs text-gray-400 uppercase tracking-widest mb-1">Coverage</p>
             <p className="text-2xl font-bold text-gray-900">50 States</p>
@@ -65,7 +68,7 @@ export default async function Home() {
           </div>
           <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
             <p className="text-xs text-gray-400 uppercase tracking-widest mb-1">Data Range</p>
-            <p className="text-2xl font-bold text-gray-900">2021 — 2024</p>
+            <p className="text-2xl font-bold text-gray-900">2020 — 2024</p>
             <p className="text-sm text-gray-500 mt-1">OEWS annual survey data</p>
           </div>
           <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
@@ -84,7 +87,7 @@ export default async function Home() {
             </li>
             <li className="flex gap-3">
               <span className="font-bold text-gray-900 w-5">2.</span>
-              <span>Compare 2021 vs 2024 trends across total employment, jobs per 1,000, and median salary.</span>
+              <span>Compare 2020 vs 2024 trends across total employment, jobs per 1,000, and median salary.</span>
             </li>
             <li className="flex gap-3">
               <span className="font-bold text-gray-900 w-5">3.</span>
@@ -94,7 +97,6 @@ export default async function Home() {
         </div>
 
         {/* National highlights */}
-
         <div className="border-l-4 border-gray-900 pl-6 mb-10">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-2">
             National Highlights
@@ -104,63 +106,74 @@ export default async function Home() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* 2x2 grid for 4 cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-          {/* Top by total employment */}
+          {/* Most Tech Jobs */}
           <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-            <p className="text-md text-gray-600 uppercase tracking-widest mb-4">
-              Most Tech Jobs
-            </p>
+            <p className="text-md text-gray-600 uppercase tracking-widest mb-4">Most Tech Jobs</p>
             <ol className="space-y-3">
               {top5Emp.map((row, i) => (
                 <li key={row.state_abbrev} className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <span className={`text-xs font-bold w-5 text-gray-900 `}>
-                      {i + 1}
-                    </span>
-                    <span className="text-sm font-semibold text-gray-800">{row.AREA_TITLE}</span>
+                    <span className="text-sm font-bold w-5 text-gray-900">{i + 1}</span>
+                    <span className="text-md font-semibold text-gray-800">{row.AREA_TITLE}</span>
                   </div>
-                  <span className="text-sm text-gray-600">{row.TOT_EMP.toLocaleString()}</span>
+                  <span className="text-md text-gray-600">{row.TOT_EMP.toLocaleString()}</span>
                 </li>
               ))}
             </ol>
           </div>
 
-          {/* Top by median salary */}
+          {/* Highest Median Salary */}
           <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-            <p className="text-md text-gray-600 uppercase tracking-widest mb-4">
-              Highest Median Salary
-            </p>
+            <p className="text-md text-gray-600 uppercase tracking-widest mb-4">Highest Median Salary</p>
             <ol className="space-y-3">
               {top5Salary.map((row, i) => (
                 <li key={row.state_abbrev} className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <span className={`text-xs font-bold w-5 text-gray-900 `}>
-                      {i + 1}
-                    </span>
-                    <span className="text-sm font-semibold text-gray-800">{row.AREA_TITLE}</span>
+                    <span className="text-sm font-bold w-5 text-gray-900">{i + 1}</span>
+                    <span className="text-md font-semibold text-gray-800">{row.AREA_TITLE}</span>
                   </div>
-                  <span className="text-sm text-gray-600">${row.A_MEDIAN.toLocaleString()}</span>
+                  <span className="text-md text-gray-600">${row.A_MEDIAN.toLocaleString()}</span>
                 </li>
               ))}
             </ol>
           </div>
 
-          {/* Top by jobs per 1000 */}
+          {/* Most Concentrated */}
           <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-            <p className="text-md text-gray-600 uppercase tracking-widest mb-4">
-              Most Concentrated
-            </p>
+            <p className="text-md text-gray-600 uppercase tracking-widest mb-4">Most Concentrated</p>
             <ol className="space-y-3">
               {top5Jobs1k.map((row, i) => (
                 <li key={row.state_abbrev} className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <span className={`text-xs font-bold w-5 text-gray-900 `}>
-                      {i + 1}
-                    </span>
-                    <span className="text-sm font-semibold text-gray-800">{row.AREA_TITLE}</span>
+                    <span className="text-sm font-bold w-5 text-gray-900">{i + 1}</span>
+                    <span className="text-md font-semibold text-gray-800">{row.AREA_TITLE}</span>
                   </div>
-                  <span className="text-sm text-gray-600">{row.JOBS_1000.toFixed(2)} / 1k</span>
+                  <span className="text-md text-gray-600">{row.JOBS_1000.toFixed(2)} / 1k</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+
+          {/* Best Buying Power */}
+          <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+            <p className="text-md text-gray-600 uppercase tracking-widest mb-4">Best Buying Power</p>
+            <p className="text-sm text-gray-600 mb-4">Cost of living index vs national avg (100)</p>
+            <ol className="space-y-3">
+              {top5BuyingPower.map((row, i) => (
+                <li key={row.state_abbrev} className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <span className="text-sm font-bold w-5 text-gray-900">{i + 1}</span>
+                    <span className="text-md font-semibold text-gray-800">{row.AREA_TITLE}</span>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-md text-gray-600">{row.RPP_2024.toFixed(1)}</span>
+                    <span className="text-sm text-green-600 ml-2">
+                      {(row.RPP_2024 - 100).toFixed(1)}%
+                    </span>
+                  </div>
                 </li>
               ))}
             </ol>
@@ -168,8 +181,8 @@ export default async function Home() {
 
         </div>
 
-        <p className="text-sm text-gray-500 mt-6 text-center">
-          Data reflects aggregated SOC 15-XXXX tech occupations · Source: BLS OEWS 2024
+        <p className="text-lg text-gray-900 mt-6 text-center">
+          Data reflects aggregated SOC 15-XXXX tech occupations · Source: BLS OEWS 2024 · RPP: BEA 2024
         </p>
 
       </div>

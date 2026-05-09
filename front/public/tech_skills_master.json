@@ -1,5 +1,781 @@
 [
   {
+    "Title":"Information Security Analysts",
+    "Example":"AJAX",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Amazon DynamoDB",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Amazon Elastic Compute Cloud EC2",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Amazon Redshift",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Amazon Web Services AWS CloudFormation",
+    "Commodity Title":"Cloud-based management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Amazon Web Services AWS software",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Ansible software",
+    "Commodity Title":"Expert system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Apache Cassandra",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Apache Hadoop",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Apache Hive",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Apache Kafka",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Apache Maven",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Apache Spark",
+    "Commodity Title":"Business intelligence and data analysis software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Apache Subversion SVN",
+    "Commodity Title":"File versioning software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Apache Tomcat",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Apple macOS",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Atlassian Confluence",
+    "Commodity Title":"Project management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Atlassian JIRA",
+    "Commodity Title":"Content workflow software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Bash",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Border Gateway Protocol BGP",
+    "Commodity Title":"Switch or router software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"C",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"C#",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"C++",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Chef",
+    "Commodity Title":"Configuration management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Django",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Docker",
+    "Commodity Title":"Application server software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Eclipse IDE",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Elasticsearch",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"eMASS",
+    "Commodity Title":"Risk management data and analysis software",
+    "Hot Technology":"N",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"In Demand Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Epic Systems",
+    "Commodity Title":"Medical software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"ESRI ArcGIS software",
+    "Commodity Title":"Geographic information system",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Extensible markup language XML",
+    "Commodity Title":"Enterprise application integration software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Firewall software",
+    "Commodity Title":"Network security and virtual private network VPN equipment software",
+    "Hot Technology":"N",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"In Demand Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Git",
+    "Commodity Title":"File versioning software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"GitHub",
+    "Commodity Title":"Application server software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Go",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Google Angular",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Hypertext markup language HTML",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"JavaScript",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"JavaScript Object Notation JSON",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Linux",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft .NET Framework",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft Access",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft Active Directory",
+    "Commodity Title":"Internet directory services software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft Active Server Pages ASP",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft ASP.NET",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft Azure software",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft Excel",
+    "Commodity Title":"Spreadsheet software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft Office software",
+    "Commodity Title":"Office suite software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft PowerPoint",
+    "Commodity Title":"Presentation software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft PowerShell",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft Project",
+    "Commodity Title":"Project management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft SharePoint",
+    "Commodity Title":"Document management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft SQL Server",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft SQL Server Integration Services SSIS",
+    "Commodity Title":"Enterprise application integration software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft SQL Server Reporting Services SSRS",
+    "Commodity Title":"Data base reporting software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft Teams",
+    "Commodity Title":"Project management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft Visio",
+    "Commodity Title":"Process mapping and design software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft Visual Basic",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft Visual Basic for Applications VBA",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft Visual Studio",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft Windows",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft Windows Server",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Microsoft Word",
+    "Commodity Title":"Word processing software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"MITRE ATT&CK software",
+    "Commodity Title":"Program testing software",
+    "Hot Technology":"N",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"In Demand Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"MongoDB",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"MySQL",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Node.js",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"NoSQL",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Operating system software",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"N",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"In Demand Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Oracle Database",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Oracle Java",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Oracle PeopleSoft",
+    "Commodity Title":"Enterprise resource planning ERP software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Oracle PL\/SQL",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Perl",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"PHP",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"PostgreSQL",
+    "Commodity Title":"Object oriented data base management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Puppet",
+    "Commodity Title":"Configuration management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Python",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Red Hat Enterprise Linux",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Red Hat OpenShift",
+    "Commodity Title":"Application server software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Ruby",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Salesforce software",
+    "Commodity Title":"Customer relationship management CRM software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"SAP software",
+    "Commodity Title":"Enterprise resource planning ERP software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"SAS",
+    "Commodity Title":"Analytical or scientific software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Scala",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Selenium",
+    "Commodity Title":"Program testing software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Shell script",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Splunk Enterprise",
+    "Commodity Title":"Cloud-based management software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Spring Framework",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Structured query language SQL",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Swift",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Tableau",
+    "Commodity Title":"Business intelligence and data analysis software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"Teradata Database",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"The MathWorks MATLAB",
+    "Commodity Title":"Analytical or scientific software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"UNIX",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Information Security Analysts",
+    "Example":"UNIX Shell",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
     "Title":"Computer Programmers",
     "Example":"Adobe Acrobat",
     "Commodity Title":"Document management software",
@@ -2025,6 +2801,1046 @@
   },
   {
     "Title":"Software Developers",
+    "Example":"Zoom",
+    "Commodity Title":"Video conferencing software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Adobe Acrobat",
+    "Commodity Title":"Document management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Adobe After Effects",
+    "Commodity Title":"Video creation and editing software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Adobe Creative Cloud software",
+    "Commodity Title":"Graphics or photo imaging software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Adobe Illustrator",
+    "Commodity Title":"Graphics or photo imaging software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Adobe InDesign",
+    "Commodity Title":"Desktop publishing software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Adobe Photoshop",
+    "Commodity Title":"Graphics or photo imaging software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"AJAX",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Amazon DynamoDB",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Amazon Elastic Compute Cloud EC2",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Amazon Redshift",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Amazon Web Services AWS CloudFormation",
+    "Commodity Title":"Cloud-based management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Amazon Web Services AWS software",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Ansible software",
+    "Commodity Title":"Expert system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Apache Cassandra",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Apache Hadoop",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Apache Hive",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Apache JMeter",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"N",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"In Demand Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Apache Kafka",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Apache Maven",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Apache Spark",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Apache Subversion SVN",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Apache Tomcat",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Appium",
+    "Commodity Title":"Program testing software",
+    "Hot Technology":"N",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"In Demand Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Apple macOS",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Apple Safari",
+    "Commodity Title":"Internet browser software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Atlassian Confluence",
+    "Commodity Title":"Project management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Atlassian JIRA",
+    "Commodity Title":"Project management software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Autodesk AutoCAD",
+    "Commodity Title":"Computer aided design CAD software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Bash",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Bentley MicroStation",
+    "Commodity Title":"Computer aided design CAD software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"C",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"C#",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"C++",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Cascading style sheets CSS",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Chef",
+    "Commodity Title":"Configuration management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Cisco Webex",
+    "Commodity Title":"Video conferencing software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Django",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Docker",
+    "Commodity Title":"Application server software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Eclipse IDE",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Elasticsearch",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Epic Systems",
+    "Commodity Title":"Medical software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"ESRI ArcGIS software",
+    "Commodity Title":"Geographic information system",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Extensible markup language XML",
+    "Commodity Title":"Enterprise application integration software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Git",
+    "Commodity Title":"File versioning software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"GitHub",
+    "Commodity Title":"Application server software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"GitLab",
+    "Commodity Title":"Application server software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Go",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Google Analytics",
+    "Commodity Title":"Data mining software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Google Angular",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Google Docs",
+    "Commodity Title":"Word processing software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Google Sheets",
+    "Commodity Title":"Spreadsheet software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Hibernate ORM",
+    "Commodity Title":"Object oriented data base management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Hypertext markup language HTML",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"IBM DB2",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"IBM SPSS Statistics",
+    "Commodity Title":"Analytical or scientific software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"JavaScript",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"JavaScript Object Notation JSON",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Jenkins CI",
+    "Commodity Title":"Enterprise application integration software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"jQuery",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"JUnit",
+    "Commodity Title":"Program testing software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Linux",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft .NET Framework",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Access",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Active Server Pages ASP",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft ASP.NET",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Azure DevOps Services",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"N",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"In Demand Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Azure software",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Excel",
+    "Commodity Title":"Spreadsheet software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Office software",
+    "Commodity Title":"Office suite software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Outlook",
+    "Commodity Title":"Electronic mail software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft PowerPoint",
+    "Commodity Title":"Presentation software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft PowerShell",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Project",
+    "Commodity Title":"Project management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft SharePoint",
+    "Commodity Title":"Document management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft SQL Server",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft SQL Server Integration Services SSIS",
+    "Commodity Title":"Enterprise application integration software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft SQL Server Reporting Services SSRS",
+    "Commodity Title":"Data base reporting software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Team Foundation Server",
+    "Commodity Title":"Project management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Teams",
+    "Commodity Title":"Project management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Visio",
+    "Commodity Title":"Process mapping and design software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Visual Basic",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Visual Basic for Applications VBA",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Visual Studio",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Windows",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Windows Server",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Microsoft Word",
+    "Commodity Title":"Word processing software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"MongoDB",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Mozilla Firefox",
+    "Commodity Title":"Internet browser software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"MySQL",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Node.js",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"NoSQL",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Operating system software",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"N",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"In Demand Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Oracle Database",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Oracle Java",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Oracle Java 2 Platform Enterprise Edition J2EE",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Oracle PeopleSoft",
+    "Commodity Title":"Enterprise resource planning ERP software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Oracle PL\/SQL",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Oracle Primavera Enterprise Project Portfolio Management",
+    "Commodity Title":"Project management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Perl",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"PHP",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"PostgreSQL",
+    "Commodity Title":"Object oriented data base management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Postman",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"N",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"In Demand Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Puppet",
+    "Commodity Title":"Configuration management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Python",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"R",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"React",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Red Hat Enterprise Linux",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Red Hat OpenShift",
+    "Commodity Title":"Application server software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Ruby",
+    "Commodity Title":"Development environment software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Salesforce software",
+    "Commodity Title":"Customer relationship management CRM software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"SAP software",
+    "Commodity Title":"Enterprise resource planning ERP software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"SAS",
+    "Commodity Title":"Analytical or scientific software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Scala",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Selenium",
+    "Commodity Title":"Program testing software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Shell script",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Slack",
+    "Commodity Title":"Cloud-based data access and sharing software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Splunk Enterprise",
+    "Commodity Title":"Cloud-based management software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Spring Boot",
+    "Commodity Title":"Application server software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Spring Framework",
+    "Commodity Title":"Web platform development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Structured query language SQL",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"Hot & In Demand"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Swift",
+    "Commodity Title":"Object or component oriented development software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Tableau",
+    "Commodity Title":"Business intelligence and data analysis software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Teradata Database",
+    "Commodity Title":"Data base management system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"TestNG",
+    "Commodity Title":"Program testing software",
+    "Hot Technology":"N",
+    "In Demand":"Y",
+    "TECH_CATEGORY":"In Demand Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"The MathWorks MATLAB",
+    "Commodity Title":"Analytical or scientific software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Transact-SQL",
+    "Commodity Title":"Data base user interface and query software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"Trimble SketchUp Pro",
+    "Commodity Title":"Graphics or photo imaging software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"UNIX",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
+    "Example":"UNIX Shell",
+    "Commodity Title":"Operating system software",
+    "Hot Technology":"Y",
+    "In Demand":"N",
+    "TECH_CATEGORY":"Hot Only"
+  },
+  {
+    "Title":"Software Quality Assurance Analysts and Testers",
     "Example":"Zoom",
     "Commodity Title":"Video conferencing software",
     "Hot Technology":"Y",

@@ -40,7 +40,7 @@ export default function SkillPage() {
   if (loading) return <p className="p-8">Loading...</p>
   if (data.length === 0) return <p className="p-8">No skills found for {occupation}</p>
 
-  // unique commodity titles per category (middle tier)
+  // unique commodity titles per category (deduping)
   const uniqueCommodities = data.filter((d, i, self) =>
     i === self.findIndex(t => t["Commodity Title"] === d["Commodity Title"] && t.TECH_CATEGORY === d.TECH_CATEGORY
     )
