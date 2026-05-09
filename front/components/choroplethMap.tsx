@@ -114,7 +114,6 @@ export default function ChoroplethMap({ data, salaryFilter, adjusted = false }: 
           if (!location) return
           if (unhoverTimer.current) clearTimeout(unhoverTimer.current)
 
-          // Compute card position here in the handler — ref access is allowed here
           const e = event.event as MouseEvent
           const rect = containerRef.current?.getBoundingClientRect()
           if (rect) {
