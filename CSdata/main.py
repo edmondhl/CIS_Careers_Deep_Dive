@@ -24,8 +24,8 @@ def filter_occupation(df, occupation):
         ["AREA_TITLE", "OCC_TITLE", "TOT_EMP", "JOBS_1000", "A_MEDIAN"]
     ]
 
-#Combine 21 and 24 dataframes and combines them , then calcs how much each metric changed between the years.
-def merge_compare(df_old, df_new, params, suffixes=("_2021", "_2024")):
+#Combine 20 and 24 dataframes and combines them , then calcs how much each metric changed between the years.
+def merge_compare(df_old, df_new, params, suffixes=("_2020", "_2024")):
     merged_comp = pd.merge(df_old, df_new, on="AREA_TITLE", suffixes=suffixes)
     for param in params:
         merged_comp[f"{param}_change_percent"] = (
@@ -99,16 +99,22 @@ def save_json(df, filename):
 if __name__ == "__main__":
     # Load Excels
     excel_file24 = "data/state_M2024_dl.xlsx"
-    excel_file21 = "data/state_M2021_dl.xlsx"
+    excel_file20 = "data/state_M2020_dl.xlsx"
     excel_technology = "data/Technology Skills.xlsx"
     excel_occupation = "data/Occupation Data.xlsx"
 
     df24 = load_excel(excel_file24, "state_M2024_dl")
-    df21 = load_excel(excel_file21, "All May 2021 data")
+    df20 = load_excel(excel_file20, "State_M2020_dl")
     df_tech = load_excel(excel_technology, "Technology Skills")
     df_occ = load_excel(excel_occupation, "Occupation Data")
 
-    occupations = ["Software Developers", "Computer Programmers", "Data Scientist", "Web Developers"]
+    df_rpp = pd.read_excel("data/RPP2021-2024.xlsx", skiprows=3)
+    df_rpp.columns = ["GeoFIPS", "AREA_TITLE", "RPP_2022", "RPP_2023", "RPP_2024"]
+    df_rpp = df_rpp[["AREA_TITLE", "RPP_2024"]]
+    df_rpp = df_rpp[df_rpp["AREA_TITLE"] != "United States"]
+    df_rpp = df_rpp.dropna(subset=["AREA_TITLE", "RPP_2024"])
+
+    occupations = ["Software Developers", "Computer Programmers", "Data Scientist", "Web Developers", "Information Security Analysts", "Software Quality Assurance Analysts and Testers"]
 
     # ONet section
     tech_codes = get_tech_occ_codes(df_occ)
@@ -126,22 +132,24 @@ if __name__ == "__main__":
     # Columns to clean
     cols = ["TOT_EMP", "JOBS_1000", "A_MEDIAN", "A_MEAN"]
     df24 = clean_numeric_columns(df24, cols)
-    df21 = clean_numeric_columns(df21, cols)
+    df20 = clean_numeric_columns(df20, cols)
 
     # occupations in state comparison
     metrics = ["TOT_EMP", "JOBS_1000", "A_MEDIAN"]
     all_filtered = []
     for occ in occupations:
         df24_occ = filter_occupation(df24, occ)
-        df21_occ = filter_occupation(df21, occ)
-        merged_occ = merge_compare(df21_occ, df24_occ, metrics)
+        df20_occ = filter_occupation(df20, occ)
+        merged_occ = merge_compare(df20_occ, df24_occ, metrics)
         all_filtered.append(merged_occ)
 
     merged_all = pd.concat(all_filtered, ignore_index=True)
-    save_json(merged_all, "comparison_2021_2024.json")
+    save_json(merged_all, "comparison_2020_2024.json")
 
     # All tech occupations by state
     tech_by_state = tech_state_summary(df24)
+    tech_by_state = tech_by_state.merge(df_rpp, on="AREA_TITLE", how="left")
+
 
     state_abbrev = {
         "Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", "Arkansas": "AR",
