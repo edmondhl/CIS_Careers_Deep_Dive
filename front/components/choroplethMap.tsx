@@ -27,15 +27,36 @@ export default function ChoroplethMap({ data, salaryFilter, adjusted = false }: 
   const router = useRouter()
   const [preview, setPreview] = useState<PreviewState>(null)
   const [cardPos, setCardPos] = useState<CardPos>({ top: 0, left: 0 })
-  
   const cardHovered = useRef(false)
   const unhoverTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
   const containerRef = useRef<HTMLDivElement>(null)
+
   const [isMobile, setIsMobile] = useState(() => {
-  if (typeof window === 'undefined') return false
-  return 'ontouchstart' in window || navigator.maxTouchPoints > 0
-})
- 
+    if (typeof window === 'undefined') return false
+    return window.innerWidth < 768
+  })
+
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth < 768)
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  const colorbarConfig = isMobile
+    ? {
+        title: { text: '' },
+        thickness: 10,
+        len: 0.8,
+        x: 1.0,
+        tickfont: { size: 12 },
+      }
+    : {
+        title: { text: 'Total Employment' },
+        thickness: 30,
+        len: 1,
+      }
 
   const effectiveSalary = (d: MapEntry) =>
     adjusted ? (d.A_MEDIAN / d.RPP_2024) * 100 : d.A_MEDIAN
@@ -51,7 +72,7 @@ export default function ChoroplethMap({ data, salaryFilter, adjusted = false }: 
       z: passing.map(d => d.TOT_EMP),
       colorscale: 'Oranges',
       hoverinfo: 'none',
-      colorbar: { title: { text: 'Total Employment' } },
+      colorbar: colorbarConfig,
       zmin: 0,
       zmax: Math.max(...data.map(d => d.TOT_EMP)),
     },
@@ -93,15 +114,21 @@ export default function ChoroplethMap({ data, salaryFilter, adjusted = false }: 
   return (
     <div className="relative" ref={containerRef}>
       <Plot
-        key={JSON.stringify({ data, salaryFilter, adjusted })}
+        key={JSON.stringify({ data, salaryFilter, adjusted, isMobile })}
         data={traces}
         layout={{
           autosize: true,
           geo: { scope: 'usa', projection: { type: 'albers usa' }, bgcolor: 'rgba(0,0,0,0)' },
           paper_bgcolor: 'rgba(0,0,0,0)',
           plot_bgcolor: 'rgba(0,0,0,0)',
-          margin: { t: 50, l: 0, r: 0, b: 0 },
-          title: { text: 'Tech Employment by State', font: { color: 'black', size: 24 }, x: 0.5 },
+          margin: isMobile
+            ? { t: 30, l: 0, r: 40, b: 0 }
+            : { t: 50, l: 0, r: 0, b: 0 },
+          title: {
+            text: 'Tech Employment by State',
+            font: { color: 'black', size: isMobile ? 16 : 24 },
+            x: 0.5,
+          },
         }}
         config={{ responsive: true }}
         style={{ width: '100%', height: '75vh' }}
