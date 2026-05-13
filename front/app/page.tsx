@@ -184,6 +184,26 @@ export default async function Home() {
         <p className="text-lg text-gray-900 mt-6 text-center">
           Data reflects aggregated SOC 15-XXXX tech occupations · Source: BLS OEWS 2024 · RPP: BEA 2024
         </p>
+        <p className="text-md text-gray-900 mt-3 text-center">
+          Website created by Edmond Liu, Published May 2026 ·{" "}
+          <a
+            href="https://www.linkedin.com/in/edmond-liu-profile/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline hover:text-blue-800"
+          >
+            LinkedIn
+          </a>
+          {" · "}
+          <a
+            href="https://github.com/edmondhl/CIS_Careers_Deep_Dive/commits/main/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline hover:text-blue-800"
+          >
+            GitHub Changelog
+          </a>
+        </p>
 
       </div>
     </main>
